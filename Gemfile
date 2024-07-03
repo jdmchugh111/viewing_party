@@ -44,6 +44,7 @@ gem "bootsnap", require: false
 
 gem "bootstrap" 
 gem "faker"
+gem "faraday"
 
 
 
