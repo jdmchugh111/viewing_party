@@ -1,0 +1,9 @@
+<h1>Movie Results</h1>
+
+<% @movie_list.each do |movie| %>
+  <%= movie[:original_title] %>
+  <br>
+  <%= "Vote Average: #{movie[:vote_average]}" %>
+  <br>
+  <br>
+  <% end %>
