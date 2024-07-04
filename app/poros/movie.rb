@@ -7,7 +7,6 @@ class Movie
               :summary,
               :cast,
               :reviews,
-              :id,
               :for_rent,
               :for_sale,
               :similar_movies,
