@@ -1,7 +1,7 @@
 <h1>Movie Results</h1>
 
 <% @movie_list.each do |movie| %>
-  <%= movie[:original_title] %>
+  <%= link_to "#{movie[:title]}", user_movie_path(@user, movie[:id]) %>
   <br>
   <%= "Vote Average: #{movie[:vote_average]}" %>
   <br>
