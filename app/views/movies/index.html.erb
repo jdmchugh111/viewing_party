@@ -1,5 +1,6 @@
 <h1>Movie Results</h1>
 
+<%=button_to "Back To Discover Page", user_discover_index_path(@user), method: :get %>
 <% @movie_list.each do |movie| %>
   <%= link_to "#{movie[:title]}", user_movie_path(@user, movie[:id]) %>
   <br>
