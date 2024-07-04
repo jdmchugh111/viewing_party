@@ -15,7 +15,7 @@ RSpec.describe 'Movie Results Page', type: :feature do
     click_button("Discover Top Rated Movies")
     expect(current_path).to eq(user_movies_path(@user_1))
     expect(page).to have_link("Shawshank Redemption")
-    expect(page).to have_content("Vote Average:")
+    expect(page).to have_content("Vote Average: 8.705")
     expect(page).to have_button("Back To Discover Page")
 
     click_button("Back To Discover Page")
