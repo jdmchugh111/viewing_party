@@ -6,4 +6,10 @@ class ViewingParty < ApplicationRecord
    def find_host
       users.where("user_parties.host = true").first
    end
+
+   def movie_by_id
+      movie_id = self.movie_id
+      facade = MoviesFacade.new(movie_id)
+      facade.movie
+   end
 end

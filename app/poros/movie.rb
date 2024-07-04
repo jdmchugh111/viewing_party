@@ -10,7 +10,8 @@ class Movie
               :id,
               :for_rent,
               :for_sale,
-              :similar_movies
+              :similar_movies,
+              :poster_path
 
   def initialize(info, credits, reviews, providers, similar)
     @title = info[:title]
@@ -25,6 +26,7 @@ class Movie
     @for_rent = providers[:results][:US][:rent]
     @for_sale = providers[:results][:US][:buy]
     @similar_movies = similar[:results]
+    @poster_path = info[:poster_path]
   end
 
   def runtime_hm(runtime)

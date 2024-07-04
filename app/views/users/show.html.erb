@@ -18,6 +18,12 @@
             <% end %>
          </ol>
 
+         <% if party.movie_id != nil %>
+         Movie: <%= link_to "#{party.movie_by_id.title}", user_movie_path(@user, party.movie_id) %>
+         <br>
+         <%= image_tag "https://image.tmdb.org/t/p/w92#{party.movie_by_id.poster_path}" %>
+         <% end %>
+
     </div><br>
   <% end %>
 </section>
