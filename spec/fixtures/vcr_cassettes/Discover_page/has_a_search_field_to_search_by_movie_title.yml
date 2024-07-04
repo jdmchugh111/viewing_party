@@ -1,0 +1,179 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.themoviedb.org/3/search/movie?api_key=<tmdb-key>&query=2001
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Date:
+      - Thu, 04 Jul 2024 13:36:06 GMT
+      Server:
+      - openresty
+      Cache-Control:
+      - public, max-age=12703
+      X-Memc:
+      - HIT
+      X-Memc-Key:
+      - fbd10b8946e0ac89d16ae748c5438246
+      X-Memc-Age:
+      - '15087'
+      X-Memc-Expires:
+      - '12703'
+      Etag:
+      - W/"207671ea9144a8749e686aedf55096bd"
+      Vary:
+      - Accept-Encoding,accept-encoding
+      - Origin
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 36f53e714a45084349e1f86b8e59163e.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - BOS50-P3
+      Alt-Svc:
+      - h3=":443"; ma=86400
+      X-Amz-Cf-Id:
+      - ZKspHfO6PiVXvishPpHTJcDOD6_4JcwV0Os13wW2a0NvVs9CjiqPcA==
+    body:
+      encoding: UTF-8
+      string: '{"page":1,"results":[{"adult":false,"backdrop_path":null,"genre_ids":[16],"id":710172,"original_language":"ja","original_title":"2001","overview":"A
+        short animation visualizing images of the year 2001.","popularity":1.172,"poster_path":"/aDPWGYyhO7mPpqEaUdwFkz2zAdt.jpg","release_date":"2001-08-15","title":"2001","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":"/w5IDXtifKntw0ajv2co7jFlTQDM.jpg","genre_ids":[878,9648,12],"id":62,"original_language":"en","original_title":"2001:
+        A Space Odyssey","overview":"Humanity finds a mysterious object buried beneath
+        the lunar surface and sets off to find its origins with the help of HAL 9000,
+        the world''s most advanced super computer.","popularity":163.134,"poster_path":"/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg","release_date":"1968-04-02","title":"2001:
+        A Space Odyssey","video":false,"vote_average":8.076,"vote_count":11195},{"adult":false,"backdrop_path":"/AkC9DX2t7zUFWj1VKVrxjq65HwF.jpg","genre_ids":[35,27],"id":10845,"original_language":"en","original_title":"2001
+        Maniacs","overview":"On their way to Spring Break, college kids take a detour
+        through an old Southern town. The people of Pleasant Valley insist the kids
+        stay for their annual barbecue celebration... but instead of getting a taste
+        of the old South, the old South gets a taste of them!","popularity":19.961,"poster_path":"/y2jZOd7C5zWEcFKJWlYkmf5eUlE.jpg","release_date":"2005-05-12","title":"2001
+        Maniacs","video":false,"vote_average":5.34,"vote_count":253},{"adult":false,"backdrop_path":"/cua5l34bgT2nNMybUfNq9HxWeA8.jpg","genre_ids":[10402],"id":48730,"original_language":"en","original_title":"Björk:
+        Vespertine Live – Royal Opera House 2001","overview":"Icelandic singer-songwriter
+        Björk performs tracks from her  Vespertine album in this 2001 performance
+        at London''s Royal Opera House.","popularity":3.717,"poster_path":"/o2cy4cEEJtfh213lJyu2gedcqDn.jpg","release_date":"2002-06-04","title":"Björk:
+        Vespertine Live – Royal Opera House 2001","video":false,"vote_average":8.0,"vote_count":14},{"adult":false,"backdrop_path":"/9sP9vEjJ1QeiiJbQYkShH38S47m.jpg","genre_ids":[28,16,10749],"id":45479,"original_language":"cn","original_title":"老夫子2001","overview":"\"Master
+        Q\" is a popular comic book series character in Hong Kong. Each comic book
+        is usually made up of many different situational stories, with 8 frmaes making
+        up a story in 1 page. In short, it is like the newspaper comics that you see
+        in America but in a book form. The movie is about how Master Q and his 2 friends
+        Mr. Chung and Potato are out looking for jobs but accidentally cause an traffic
+        accident for Mandy (Cecilia Cheung) and Fred (Nicholas Tse). As a result,
+        both have lost their memories and due to circumstances, they have become enemies...
+        but then, true love will eventually reunite (with a lot of help from Master
+        Q and Potato).","popularity":2.11,"poster_path":"/nP87Cd21VB2EB7cb5KT3nZegR2Q.jpg","release_date":"2001-04-05","title":"Master
+        Q 2001","video":false,"vote_average":3.6,"vote_count":6},{"adult":false,"backdrop_path":"/rKF3kYEGCdEL1soPSup7rG7hV7X.jpg","genre_ids":[12,878,18,16],"id":62454,"original_language":"ja","original_title":"２００１夜物語","overview":"In
+        the year 2058, mankind is about to take its first leap into the distant reaches
+        of space.  Using the resources at the tail end of a comet, massive spaceships
+        will be sent to the corners of the universe in an attempt to colonize other
+        worlds, but due to the length of time it will take to arrive at even the closest
+        solar system, the comets must be destroyed in-flight, resulting in super-fast
+        speeds that will kill any life onboard; only frozen sperm and eggs, and machines
+        will survive the journey.  Carrying the unborn children of the Robinsons,
+        the first of these ships must now set forth to Ozma; and with its precious
+        cargo is coupled the hopes and fears of all humanity.","popularity":1.824,"poster_path":"/iAR5HppIge2gI4xT7XmiBsQZzpW.jpg","release_date":"1987-06-21","title":"Space
+        Fantasia 2001 Nights","video":false,"vote_average":7.5,"vote_count":2},{"adult":false,"backdrop_path":"/A22MREXcdBifQpJRNftH5HFRiDv.jpg","genre_ids":[99,16],"id":522307,"original_language":"es","original_title":"2001
+        : Destellos en la oscuridad","overview":"A recreation of the interview with
+        Stanley Kubrick that Playboy magazine published in its September 1968 issue
+        and that has become essential when approaching the reflections and theories
+        that led the director to shoot one of his masterpieces.","popularity":2.031,"poster_path":"/cO8lM6hY2He9c6Q7PSIu5fU9CMg.jpg","release_date":"2018-05-10","title":"2001:
+        Sparks in the Dark","video":false,"vote_average":5.8,"vote_count":6},{"adult":false,"backdrop_path":"/nmgnd9nSjMPxhViudCNxXhPMYh3.jpg","genre_ids":[10402],"id":42898,"original_language":"en","original_title":"U2:
+        Elevation 2001 - Live from Boston","overview":"1. Elevation 2. Beautiful Day
+        3. Until The End Of The World 4. Stuck In A Moment You Can''t Get Out Of 5.
+        Kite 6. Gone 7. New York 8. I Will Follow 9. Sunday Bloody Sunday 10. In A
+        Little While 11. Desire 12. Stay (Faraway, So Close!) 13. Bad 14. Where The
+        Streets Have No Name 15. Bullet The Blue Sky 16. With Or Without You 17. The
+        Fly 18. Wake Up Dead Man 19. Walk On  Elevation 2001: Live From Boston captures
+        the band''s return to performing to indoor venues, making for a more intimate
+        experience. The band had played mostly large outdoor stadiums over the previous
+        decade on their Zoo TV and PopMart Tours. The film also showcases a more simplified,
+        strip-downed stage design, free of the elaborate technologies of the previous
+        two tours.","popularity":1.4,"poster_path":"/qg5H9RjRMRSAL2t5SzoxwDQ3EGw.jpg","release_date":"2001-06-03","title":"U2:
+        Elevation 2001 - Live from Boston","video":false,"vote_average":8.0,"vote_count":18},{"adult":false,"backdrop_path":null,"genre_ids":[16,12,10751],"id":791437,"original_language":"ja","original_title":"ピチューとピカチュウのふゆやすみ2001","overview":"On
+        the day before Christmas, Pikachu and its Pokémon friends are playing in a
+        snowy town. But their snowball bowling game goes awry, and Totodile''s snowball
+        knocks a passing Delibird out of the sky! Delibird crashes down onto Meowth
+        and Wobbuffet, who were out for an innocent stroll, but a wild Skarmory is
+        annoyed at the racket and sends them all blasting off. Delibird has another
+        bumpy landing, and now it''s in a panic because it''s lost all the presents
+        that were in its sack. If they''re not found by midnight, they won''t be delivered
+        for Christmas! Fortunately, Pikachu and its friends will help Delibird find
+        all the presents.","popularity":2.156,"poster_path":"/uEiAZkT1wuj7xdQBGXEnNNV8zRb.jpg","release_date":"2000-12-22","title":"Pichu
+        \u0026 Pikachu''s Winter Vacation 2001","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[10402],"id":22703,"original_language":"en","original_title":"Sensation
+        2001","overview":"Sensation 2001 in Amsterdam ArenA. Guests were asked to
+        come dressed in white - a success that 2002 sparked the Sensation White-concept.","popularity":0.969,"poster_path":null,"release_date":"2001-07-07","title":"Sensation
+        2001","video":true,"vote_average":4.2,"vote_count":2},{"adult":false,"backdrop_path":"/lFQLRVreVNYUyKOOY2foUz7u4Au.jpg","genre_ids":[18],"id":927900,"original_language":"ja","original_title":"ベルサイユのばら
+        2001 - オスカルとアンドレ編","overview":"Takarazuka Revue’s 1992 production of \"The
+        Rose of Versailles 2001: Oscar and Andre\". This version focuses on the relationship
+        between Oscar and Andre.","popularity":0.256,"poster_path":"/3fzxcXBpuwS6nnYv4rTqvRFn3Op.jpg","release_date":"2001-11-10","title":"The
+        Rose of Versailles 2001: Oscar and Andre (Star Troupe, 2001)","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[10402],"id":841689,"original_language":"ja","original_title":"ayumi
+        hamasaki COUNTDOWN LIVE 2001-2002 A","overview":"Countdown Live 2001-2002
+        A is a recording of Ayumi Hamasaki''s 2001 New Year''s Eve concert, originally
+        released as part of the Complete Live Box.","popularity":0.004,"poster_path":"/osp3L4MEAFCGmFJ5nzIl7MXPM9k.jpg","release_date":"2003-01-29","title":"ayumi
+        hamasaki COUNTDOWN LIVE 2001-2002 A","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":554629,"original_language":"cn","original_title":"童黨2001","overview":"The
+        new wave of drug problems arising between youngsters in Hong Kong","popularity":1.079,"poster_path":"/f1jxMTugh2LRwBP5AqzLn0Mxxjk.jpg","release_date":"2001-03-22","title":"Gangs
+        2001","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[10402],"id":1116412,"original_language":"ja","original_title":"ayumi
+        hamasaki DOME TOUR 2001 A","overview":"ayumi hamasaki DOME TOUR 2001 A is
+        the third concert DVD released by Hamasaki Ayumi.","popularity":0.001,"poster_path":"/5zm7HKD0WSbgdQXnJI21drui6n9.jpg","release_date":"2001-12-12","title":"ayumi
+        hamasaki DOME TOUR 2001 A","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[10402],"id":424724,"original_language":"en","original_title":"Best
+        of 2001","overview":"1 - Kylie  Minongue - Can''t  get you out my head 2 -
+        No Angels - Daylight in your eyes 3 - Atomic Kitten - Whole Again  4 - Gorilas
+        - Clint Eastwood 5 - Depeche Mode - Dream On  6 - Samy Deluxe - Hab'' Gehõrt
+        7 - Sarah Connor  ft. TQ - Let''s get back to bad. 8 - Blue - All Rise 9 -
+        Dido  - Here With Me 10 - Bap - Alf Un Zo 11 - Melanie B - Lullaby 12 - Reamonn
+        - Weep 13 - Snoop Dogg - Lay Low 14 - Emma Bunton - What Took You so long?
+        15 - Dj Bobo \u0026amp; Irene Cara - What a Feeling 16 - Dj Otzi - Do Wah
+        Diddy 17 - Scooter - Posse (I Need you on the floor) 18 - O-Town - Uquid Dreams
+        19 - Enigma - Turn Around 20 - Britney Spears - Don''t Let me be the last
+        to know 21 - Melanie Thornton - Love how you love me 22 - Right Said Fred
+        - You''re my mate 23 - Sandra - Forever 24 - Die 3. Generation - Der Sonne
+        entgegen.. 25 - Modern Talking - Win the race 26 - Millane Fernandez - Boom
+        Boom 27 - Bosson - One in a million 28 - Daft Punk - One more time","popularity":0.001,"poster_path":null,"release_date":"2001-11-06","title":"Best
+        of 2001","video":true,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":"/fQnVFn9MPW9k4o3lbWZkqxK08dv.jpg","genre_ids":[],"id":717843,"original_language":"ja","original_title":"Hello!
+        Project 2001 Summer ～TOGETHER! サマーパーティー!～","overview":"Hello! Project concert
+        held at Yoyogi National Gymnasium.","popularity":1.257,"poster_path":"/2LLcFzIoTzalOCVfP6Bj6HEcb8X.jpg","release_date":"2001-07-28","title":"Hello!
+        Project 2001 Summer ~TOGETHER! Summer Party!~","video":true,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":null,"genre_ids":[99],"id":875266,"original_language":"de","original_title":"Amerikas
+        dunkelste Stunden - Der 11. September 2001","overview":"September 11, 2001
+        devastated the lives of countless people and changed the world. Two planes
+        hijacked by supporters of the Islamist terrorist network al-Qaeda crashed
+        into the towers of New York''s World Trade Center. A third plane flew into
+        the Pentagon, another was crashed in Pennsylvania. Almost 3,000 people have
+        to die. Contemporary witnesses recount the experiences of September 11th from
+        their perspective.","popularity":0.074,"poster_path":null,"release_date":"2018-09-10","title":"America''s
+        Darkest Hours - September 11, 2001","video":false,"vote_average":8.0,"vote_count":1},{"adult":false,"backdrop_path":null,"genre_ids":[],"id":1252485,"original_language":"xx","original_title":"cubrique
+        2001","overview":"Color mix.","popularity":0.008,"poster_path":"/e5KNuzluYtyxtDuoUJ8Q5LKlxdG.jpg","release_date":"2018-05-11","title":"cubrique
+        2001","video":false,"vote_average":0.0,"vote_count":0},{"adult":false,"backdrop_path":"/wtCH8dPzp6r5e5pRNdzHc5bNmOB.jpg","genre_ids":[35,27],"id":40912,"original_language":"en","original_title":"2001
+        Maniacs: Field of Screams","overview":"When this year''s round of unsuspecting
+        Northerners fail to show up for their annual Guts N'' Glory Jamboree, the
+        residents of Pleasant Valley take their cannibalistic carnival on the road
+        and head to Iowa where they encounter spoiled heiresses Rome \u0026amp; Tina
+        Sheraton and the cast and crew of their \"Road Rascals\" reality show. Performing
+        \"The Bloodiest Show on Earth\", our Southern Maniacs prove more than ratings
+        killers in what John Landis has called \"one of the rare sequels that surpasses
+        the original\".","popularity":9.244,"poster_path":"/j6Y6BpdbbWPm0tTikKzr1fIb7j0.jpg","release_date":"2010-07-20","title":"2001
+        Maniacs: Field of Screams","video":false,"vote_average":3.9,"vote_count":72},{"adult":false,"backdrop_path":"/gr2eFkS9s5uM8jwBetX1qsSkmi2.jpg","genre_ids":[35,878,28],"id":7290,"original_language":"en","original_title":"2001:
+        A Space Travesty","overview":"When odd reports are received through official
+        channels stating that the President of the United States is being held captive
+        on a secret international moon base called Vegan and that he has been replaced
+        on Earth by a clone, the US Marshall Service immediately sends their ''best''
+        man, Dix, on the mission.","popularity":10.221,"poster_path":"/jNCvJuLbHjvXPvyOubbaa54ArvH.jpg","release_date":"2000-10-31","title":"2001:
+        A Space Travesty","video":false,"vote_average":4.323,"vote_count":262}],"total_pages":17,"total_results":337}'
+  recorded_at: Thu, 04 Jul 2024 13:36:06 GMT
+recorded_with: VCR 6.2.0
