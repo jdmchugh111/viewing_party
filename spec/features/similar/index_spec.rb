@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Viewing Party Show Page', type: :feature do
+RSpec.describe 'Similar Movies Page', type: :feature do
   before(:each) do
     @user_1 = User.create!(name: 'Sam', email: 'sam@email.com')
     @user_2 = User.create!(name: 'Tommy', email: 'tommy@email.com')

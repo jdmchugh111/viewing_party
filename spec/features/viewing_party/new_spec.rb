@@ -57,6 +57,9 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
   end
 
   it "should appear on all invited guests' dashboards", :vcr do
+    @user_3 = User.create!(name: 'James', email: 'james@email.com')
+    @user_4 = User.create!(name: 'Kibo', email: 'kibo@email.com')
+
     visit user_discover_index_path(@user_1)
 
     fill_in("Movie Title", with: "2001")
@@ -68,6 +71,8 @@ RSpec.describe 'New Viewing Party Page', type: :feature do
     fill_in("When", with: "07/19/2024")
     fill_in("Start time", with: "11:11 PM")
     fill_in("Guest email 1", with: "tommy@email.com")
+    fill_in("Guest email 2", with: "tommy@email.com")
+    fill_in("Guest email 3", with: "tommy@email.com")
     click_button("Create Viewing Party")
 
     visit user_path(@user_2)
