@@ -36,4 +36,15 @@ RSpec.describe 'Movie Details Page', type: :feature do
     expect(page).to have_content("Total Reviews: 11")
     expect(page).to have_content("Review: There are many great predictions hinting to future (it is from 1968 - can you believe it?) innovations throughout the movie. I might not have found all them because I keep falling asleep while watching it but I will keep trying to find them all.")
   end
+
+  it "has a button for similar movies", :vcr do
+    visit user_discover_index_path(@user_1)
+
+    fill_in("Movie Title", with: "2001")
+    click_button("Search by Movie Title")
+    click_link("2001: A Space Odyssey")
+    click_button("Get Similar Movies")
+
+    expect(current_path).to eq(user_movie_similar_index_path(@user_1, 62))
+  end
 end

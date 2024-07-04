@@ -5,7 +5,7 @@
   <p>Summary: <%= movie[:overview] %></p>
   <p>Release Date: <%= movie[:release_date] %></p>
   <p>Vote Average: <%= movie[:vote_average] %></p>
-  <%= image_tag "https://image.tmdb.org/t/p/w92#{movie[:poster_path]}" %>
+  <%= image_tag "https://image.tmdb.org/t/p/w92#{movie[:poster_path]}", class: 'poster-image' %>
   <br>
   <br>
 <% end %>
