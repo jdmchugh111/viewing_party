@@ -1,0 +1,9 @@
+<h1>Find Movies To Watch</h1>
+<%= button_to "Discover Top Rated Movies", user_movies_path(@user), method: :get %>
+
+<%= form_with url: user_movies_path, method: :get, local: true, data: { turbo: false } do |f| %>
+  <%= f.label :title, "Movie Title" %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.submit "Search by Movie Title" %>
+<% end %>

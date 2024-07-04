@@ -44,6 +44,7 @@ gem "bootsnap", require: false
 
 gem "bootstrap" 
 gem "faker"
+gem "faraday"
 
 
 
@@ -76,4 +77,7 @@ group :test do
   gem "capybara"
   gem "launchy"
   gem "simplecov"
+  gem "webmock"
+  gem "vcr"
+  gem "orderly"
 end

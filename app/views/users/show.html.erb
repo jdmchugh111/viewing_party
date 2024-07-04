@@ -1,17 +1,28 @@
 <h1><%= "#{@user.name}'s Dashboard" %></h1><br>
 
+<%=button_to "Discover New Movies", user_discover_index_path(@user), method: :get %>
+
 <section class="viewing_parties">
   <% @user.viewing_parties.each do |party| %>
     <div class="viewing_party">
          Party Time: <%= party.date %> at <%= party.start_time %><br>
-         Host: <%= party.find_host.name %><br>
+         <b>Host: <%= party.find_host.name %></b><br>
          Who's Coming? <br/>
 
          <ol>
+            <li><b><%= @user.name %></b></li>
             <% party.users.each do |attendee| %>
+               <% if attendee.name != @user.name %>
                <li><%= attendee.name %> </li>
+               <% end %>
             <% end %>
          </ol>
+
+         <% if party.movie_id != nil %>
+         Movie: <%= link_to "#{party.movie_by_id.title}", user_movie_path(@user, party.movie_id) %>
+         <br>
+         <%= image_tag "https://image.tmdb.org/t/p/w92#{party.movie_by_id.poster_path}", class: 'movie-poster' %>
+         <% end %>
 
     </div><br>
   <% end %>
