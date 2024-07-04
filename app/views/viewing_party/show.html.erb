@@ -2,13 +2,13 @@
 
 <h4>Where to Buy:</h4>
 <% @movie.for_sale.each do |platform| %>
-  <%= image_tag "https://image.tmdb.org/t/p/w45#{platform[:logo_path]}" %>
+  <%= image_tag "https://image.tmdb.org/t/p/w45#{platform[:logo_path]}", class: 'provider-logo' %>
 <% end %>
 
 
 <h4>Where to Rent:</h4>
 <% @movie.for_rent.each do |platform| %>
-  <%= image_tag "https://image.tmdb.org/t/p/w45#{platform[:logo_path]}" %>
+  <%= image_tag "https://image.tmdb.org/t/p/w45#{platform[:logo_path]}", class: 'provider-logo' %>
 <% end %>
 <br>
 <br>
