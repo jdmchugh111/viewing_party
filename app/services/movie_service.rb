@@ -3,7 +3,7 @@ class MovieService
     @movie_id = movie_id
   end
 
- def info
+  def info
     get_url("/3/movie/#{@movie_id}")
   end
 
